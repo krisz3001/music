@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body onkeypress="play_pa(event)">
+    <div class="main">
+        <div class="menu">
+            <div class="menu_item">Home</div>
+            <div class="menu_item">Radio</div>
+        </div>
+        <div class="content">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false" onwheel="wheel(event)">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="my_card">
+                  <img src="acdc.jpg">
+                  <h2>Black Ice</h2>
+                  <h3>AC/DC</h3>
+                </div>
+                <div class="my_card">
+                  <img src="rock.jpg">
+                  <h2>Rock or Bust</h2>
+                  <h3>AC/DC</h3>
+                </div>
+                <div class="my_card">
+                  <img src="ac-dc.jpg">
+                  <h2>AC/DC</h2>
+                  <h3>AC/DC</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="my_card">
+                  <img src="https://i.pinimg.com/originals/a6/65/ea/a665ea5522ecb63c16ca2cbae286f21c.jpg">
+                  <h2>Nobody expects</h2>
+                  <h3>the Spanish Inquisition</h3>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="play">
+          <div class="music_data_holder">
+            <a href="https://i.pinimg.com/originals/a6/65/ea/a665ea5522ecb63c16ca2cbae286f21c.jpg" target="_blank"><div id="music_img"></div></a>
+            <div id="actual_title">Black Ice</div>
+            <div id="actual_author">AC/DC</div>
+          </div>
+          <div class="controller_holder">
+            <div class="controller">
+              <img src="backward.svg">
+              <img id="play_pause" src="play.svg" onclick="play_pa(event)">
+              <img src="forward.svg">
+            </div>
+            <div class="player">
+              <audio id="audioPlayer">
+                <source src="acdc.mp3" type="audio/mpeg">
+              </audio>
+              <div class="time_line">
+                <div class="inner_line" id="inner_line">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

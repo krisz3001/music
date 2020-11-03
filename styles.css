@@ -1,0 +1,147 @@
+:root{
+    --menu-color: #181818;
+    --content-color: #242424;
+    --play-color: #404040;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+.menu{
+    background-color: var(--menu-color);
+    width: 250px;
+    height: calc(100vh - 100px);
+    float: left;
+}
+.content{
+    background-color: var(--content-color);
+    width: calc(100% - 250px);
+    height: calc(100vh - 100px);
+    float: left;
+    padding-top: 150px;
+}
+.play{
+    background-color: var(--play-color);
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+.menu_item{
+    color: #f0f0f0;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.menu_item:hover{
+    cursor: pointer;
+    background-color: rgb(15, 15, 15);
+    font-weight: bold;
+    transition: 0.2s;
+}
+.music_data_holder{
+    width: 250px;
+    height: 100%;
+    padding: 10px;
+    float: left;
+}
+#music_img{
+    height: 80px;
+    width: 80px;
+    float: left;
+    background-image: url('acdc.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+#actual_title{
+    font-size: 20px;
+    color: white;
+    line-height: 20px;
+}
+#actual_author{
+    margin-top: 5px;
+    color: rgb(179, 179, 179);
+}
+.controller_holder{
+    width: calc(100% - 250px);
+    height: 50%;
+    float: left;
+}
+.controller{
+    width: 100px;
+    height: 100%;
+    margin: auto;
+}
+.controller img{
+    width: 30px;
+    float: left;
+    margin: 0;
+    filter: invert(0.8);
+    margin-top: 10px;
+}
+.controller img:hover{
+    cursor: pointer;
+    filter: invert(1);
+}
+#play_pause{
+    width: 40px;
+    margin-top: 8px;
+}
+.time_line{
+    width: 500px;
+    height: 20px;
+    border: 1px solid white;
+    margin: auto;
+}
+.inner_line{
+    width: 0;
+    height: 100%;
+    background-color: greenyellow;
+}
+.my_card{
+    width: calc(100% / 3);
+    min-height: 300px;
+    float: left;
+    padding: 20px;
+}
+.my_card:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+.my_card:hover h2{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    text-decoration: underline;
+}
+.my_card:hover h3{
+    background-color: white;
+    cursor: pointer;
+    color: gray;
+    text-decoration: underline;
+}
+.my_card img{
+    width: 80%;
+    margin-left: 10%;
+}
+.my_card h2{
+    padding-top: 5px;
+    padding-left: 10%;
+    color: white;
+    font-size: 1.5em;
+    
+}
+.my_card h3{
+    padding-left: 10%;
+    color: lightgray;
+    font-size: 1em;
+}
+.carousel-inner{
+    width: 80%;
+    margin-left: 10%;
+}
